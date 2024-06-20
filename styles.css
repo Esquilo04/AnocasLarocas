@@ -286,7 +286,7 @@ footer {
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     margin-bottom: 20px; /* Espaçamento entre os itens */
-    height: 350px; /* Altura suficiente para garantir a visibilidade do botão de play */
+    height: 400px; /* Altura suficiente para garantir a visibilidade do botão de play */
 }
 
 .playlist-item img {
