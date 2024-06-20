@@ -29,7 +29,7 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    background-image: url('Images/capa/capaprincipal.jpeg');
+    background-image: url('images/capa/capaprincipal.jpeg');
     background-size: cover;
     background-position: center;
     display: flex;
