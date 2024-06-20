@@ -1,0 +1,409 @@
+/* Estilos gerais */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para o cabeçalho */
+header {
+    background: linear-gradient(to right, #ffbdbd, #ffb6c1, #ffcccc);
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+/* Estilos para o corpo */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url('Images/WhatsApp Image 2024-06-19 at 14.31.34.jpeg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Estilos para a seção de tópicos */
+.cover {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+}
+
+.topics-overlay {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.topic {
+    width: 200px;
+    margin: 10px;
+    position: relative;
+    border: 3px solid #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.topic img {
+    width: 100%;
+    height: 200px; /* Altura fixa para todas as imagens */
+    object-fit: cover; /* Mantém a proporção e corta o excesso */
+    transition: transform 0.3s ease;
+}
+
+.topic:hover img {
+    transform: scale(1.1);
+}
+
+.topic p {
+    margin: 0;
+    background-color: #fff;
+    color: #333;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.topic p i {
+    margin-right: 5px;
+}
+
+.clip-icon {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: #ffbdbd;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+footer {
+    background: linear-gradient(to right, #ffbdbd, #ffb6c1, #ffb1b6);
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1.2rem; /* Ajuste o tamanho do texto conforme necessário */
+    font-weight: bold; /* Deixa o texto em negrito */
+}
+
+/* Estilos para o título */
+.titulo-simbologia {
+    text-align: center; /* Centraliza o título */
+    font-family: 'Montserrat', sans-serif; /* Fonte do Google Fonts */
+    font-size: 2rem; /* Tamanho do título */
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+    text-shadow: 0 0 10px #fff, /* Contorno branco */
+                 0 0 10px #fff, 
+                 0 0 10px #fff,
+                 0 0 10px #fff; /* Espalha o contorno branco */
+}
+
+/* Estilos para o texto sobre a simbologia */
+.texto-simbologia {
+    background-color: #fff; /* Fundo branco */
+    color: #333; /* Cor do texto */
+    text-align: justify; /* Alinhamento justificado */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 10px; /* Borda arredondada */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    max-width: 800px; /* Largura máxima do texto */
+    margin: 0 auto 20px; /* Margem para centralizar */
+    font-family: 'Montserrat', sans-serif; /* Fonte do Google Fonts */
+    line-height: 1.6; /* Altura da linha para melhor legibilidade */
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+    margin-bottom: 20px;
+}
+
+/* Estilos para o botão */
+.botao-voltar {
+    text-align: center; /* Centraliza o botão */
+    margin-top: 20px; /* Espaçamento acima do botão */
+}
+
+.botao {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffbdbd; /* Cor de fundo do botão */
+    color: #333; /* Cor do texto do botão */
+    text-decoration: none; /* Remove sublinhado do link */
+    border: 2px solid #fff; /* Borda do botão */
+    border-radius: 5px; /* Arredondamento da borda */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transição suave */
+}
+
+.botao:hover {
+    background-color: #ffb6c1; /* Cor de fundo ao passar o mouse */
+    color: #fff; /* Cor do texto ao passar o mouse */
+}
+
+.content {
+    margin-bottom: 20px;
+}
+
+.contentplay {
+    display: flex;
+    justify-content: space-between; /* Distribui os itens com espaço uniforme */
+    flex-wrap: wrap;
+}
+
+.titulo-motivos {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.motivos-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.motivos-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.titulo-mes {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.lista-motivos {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.lista-motivos li {
+    margin-bottom: 10px;
+}
+
+.motivos-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-height: 600px; /* Altura máxima das caixas para caber na página sem scroll horizontal */
+    overflow: auto; /* Adiciona scroll interno caso o conteúdo ultrapasse a altura máxima */
+}
+
+.motivos-box {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    max-height: 100%; /* Altura máxima relativa ao container pai */
+    overflow: auto; /* Scroll interno para conteúdo que ultrapassa a altura máxima */
+}
+
+.titulo-mes {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.lista-motivos {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.lista-motivos li {
+    margin-bottom: 10px;
+}
+
+/* Estilos para a caixa de texto */
+.caixa-texto {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 9999;
+    overflow-y: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudo-caixa {
+    width: 80%;
+    max-width: 600px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    position: relative;
+}
+
+.fechar-caixa {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.fechar-caixa:hover {
+    color: #333;
+}
+
+.playlist-item {
+    flex-basis: 30%; /* Especifica a base flexível do item */
+    box-sizing: border-box; /* Inclui padding e borda na largura e altura total */
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-bottom: 20px; /* Espaçamento entre os itens */
+    height: 350px; /* Altura suficiente para garantir a visibilidade do botão de play */
+}
+
+.playlist-item img {
+    width: 100%;
+    height: 200px; /* Altura fixa para todas as imagens */
+    object-fit: cover; /* Mantém a proporção e corta o excesso */
+    border-radius: 8px; /* Borda arredondada */
+}
+
+.playlist-item p {
+    color: #333;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.play-btn {
+    background-color: grey; /* Cor do fundo do botão */
+    border: none;
+    padding: 10px; /* Ajuste o padding conforme necessário */
+    cursor: pointer;
+    display: block; /* Alinha o botão abaixo da imagem */
+    margin: 0 auto; /* Centraliza o botão horizontalmente */
+    width: 50px; /* Largura do botão */
+    height: 50px; /* Altura do botão */
+    border-radius: 50%; /* Botão redondo */
+    color: white; /* Cor do ícone */
+    font-size: 24px; /* Tamanho do ícone */
+}
+
+.play-btn i {
+    font-size: 24px; /* Tamanho do ícone */
+}
+
+.containerplay {
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+
+
+/* Estilos para a galeria */
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.gallery-folder {
+    margin: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.gallery-folder img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.gallery-folder img:hover {
+    transform: scale(1.05);
+}
+
+.gallery-folder p {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: white; /* Define a cor do texto das legendas como branco */
+    font-weight: bold; /* Adiciona negrito ao texto */
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8); /* Adiciona sombra ao texto */
+    text-decoration:solid; /* Adiciona sublinhado ao texto */
+}
+
+/* Estilos para o modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    display: none;
+    margin: auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 1000px;
+}
+
+.modal-content img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}

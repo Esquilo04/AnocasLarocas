@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Fotos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Galeria de Fotos</h1>
+        </div>
+    </header>
+    <main>
+        <div class="gallery-container">
+            <!-- Pasta 1 -->
+            <div class="gallery-folder" data-folder="folder1">
+                <img src="images/primeiras/WhatsApp Image 2024-06-20 at 15.19.59.jpeg" alt="Capa da Pasta 1">
+                <p>Primeiras fotos juntos</p>
+            </div>
+            <!-- Pasta 2 -->
+            <div class="gallery-folder" data-folder="folder2">
+                <img src="images/segundas/WhatsApp Image 2024-06-20 at 15.37.28 (3).jpeg" alt="Capa da Pasta 2">
+                <p>Fotos mais fotogénicas</p>
+            </div>
+            <!-- Pasta 2 -->
+            <div class="gallery-folder" data-folder="folder3">
+                <img src="images/Morconas/WhatsApp Image 2024-06-20 at 15.51.18 (2).jpeg" alt="Capa da Pasta 3">
+                <p>Fotos morconas</p>
+            </div>
+        </div>
+        
+        <!-- Modal para a galeria -->
+        <div id="gallery-modal" class="modal">
+            <span class="close">&times;</span>
+            <div class="modal-content" id="folder1">
+                <img src="images/primeiras/WhatsApp Image 2024-06-20 at 15.19.58 (1).jpeg" alt="Foto 1 da Pasta 1">
+                <img src="images/primeiras/WhatsApp Image 2024-06-20 at 15.19.58.jpeg" alt="Foto 2 da Pasta 1">
+                <img src="images/primeiras/WhatsApp Image 2024-06-20 at 15.19.59 (1).jpeg" alt="Foto 3 da Pasta 1">
+                <img src="images/primeiras/WhatsApp Image 2024-06-20 at 15.19.59 (2).jpeg" alt="Foto 4 da Pasta 1">
+                <img src="images/primeiras/WhatsApp Image 2024-06-20 at 15.19.59 (3).jpeg" alt="Foto 5 da Pasta 1">
+                <img src="images/primeiras/WhatsApp Image 2024-06-20 at 15.19.59 (4).jpeg" alt="Foto 6 da Pasta 1">
+                <img src="images/primeiras/WhatsApp Image 2024-06-20 at 15.19.59 (5).jpeg" alt="Foto 7 da Pasta 1">
+                <img src="images/primeiras/WhatsApp Image 2024-06-20 at 15.19.59 (6).jpeg" alt="Foto 8 da Pasta 1">
+                <img src="images/primeiras/WhatsApp Image 2024-06-20 at 15.19.59.jpeg" alt="Foto 9 da Pasta 1">
+                <img src="images/primeiras/WhatsApp Image 2024-06-20 at 15.20.00 (1).jpeg" alt="Foto 10 da Pasta 1">
+                <img src="images/primeiras/WhatsApp Image 2024-06-20 at 15.20.00 (2).jpeg" alt="Foto 11 da Pasta 1">
+                <img src="images/primeiras/WhatsApp Image 2024-06-20 at 15.20.00 (3).jpeg" alt="Foto 12 da Pasta 1">
+                <img src="images/primeiras/WhatsApp Image 2024-06-20 at 15.20.00 (4).jpeg" alt="Foto 13 da Pasta 1">
+                <img src="images/primeiras/WhatsApp Image 2024-06-20 at 15.20.00 (5).jpeg" alt="Foto 14 da Pasta 1">
+                <img src="images/primeiras/WhatsApp Image 2024-06-20 at 15.20.00 (6).jpeg" alt="Foto 15 da Pasta 1">
+                <img src="images/primeiras/WhatsApp Image 2024-06-20 at 15.20.00.jpeg" alt="Foto 16 da Pasta 1">
+                <img src="images/primeiras/WhatsApp Image 2024-06-20 at 15.20.01 (1).jpeg" alt="Foto 17 da Pasta 1">
+                <img src="images/primeiras/WhatsApp Image 2024-06-20 at 15.20.01 (2).jpeg" alt="Foto 18 da Pasta 1">
+                <img src="images/primeiras/WhatsApp Image 2024-06-20 at 15.20.01 (3).jpeg" alt="Foto 19 da Pasta 1">
+                <img src="images/primeiras/WhatsApp Image 2024-06-20 at 15.20.01 (4).jpeg" alt="Foto 20 da Pasta 1">
+                <img src="images/primeiras/WhatsApp Image 2024-06-20 at 15.20.01 (5).jpeg" alt="Foto 21 da Pasta 1">
+                <img src="images/primeiras/WhatsApp Image 2024-06-20 at 15.20.01 (6).jpeg" alt="Foto 22 da Pasta 1">
+                <img src="images/primeiras/WhatsApp Image 2024-06-20 at 15.20.01.jpeg" alt="Foto 23 da Pasta 1">
+                <img src="images/primeiras/WhatsApp Image 2024-06-20 at 15.20.02 (1).jpeg" alt="Foto 24 da Pasta 1">
+                <img src="images/primeiras/WhatsApp Image 2024-06-20 at 15.20.02 (2).jpeg" alt="Foto 25 da Pasta 1">
+                <img src="images/primeiras/WhatsApp Image 2024-06-20 at 15.20.02 (3).jpeg" alt="Foto 26 da Pasta 1">
+                <img src="images/primeiras/WhatsApp Image 2024-06-20 at 15.20.02.jpeg" alt="Foto 27 da Pasta 1">
+                <!-- Adicione mais fotos conforme necessário -->
+            </div>
+            <div class="modal-content" id="folder2">
+                <img src="images/segundas/WhatsApp Image 2024-06-20 at 15.37.27 (1).jpeg" alt="Foto 1 da Pasta 2">
+                <img src="images/segundas/WhatsApp Image 2024-06-20 at 15.37.27 (2).jpeg" alt="Foto 2 da Pasta 2">
+                <img src="images/segundas/WhatsApp Image 2024-06-20 at 15.37.27 (3).jpeg" alt="Foto 3 da Pasta 2">
+                <img src="images/segundas/WhatsApp Image 2024-06-20 at 15.37.27.jpeg" alt="Foto 4 da Pasta 2">
+                <img src="images/segundas/WhatsApp Image 2024-06-20 at 15.37.28 (1).jpeg" alt="Foto 5 da Pasta 2">
+                <img src="images/segundas/WhatsApp Image 2024-06-20 at 15.37.28 (3).jpeg" alt="Foto 6 da Pasta 2">
+                <img src="images/segundas/WhatsApp Image 2024-06-20 at 15.37.28 (4).jpeg" alt="Foto 7 da Pasta 2">
+                <img src="images/segundas/WhatsApp Image 2024-06-20 at 15.37.28 (5).jpeg" alt="Foto 8 da Pasta 2">
+                <img src="images/segundas/WhatsApp Image 2024-06-20 at 15.37.28.jpeg" alt="Foto 9 da Pasta 2">
+                <img src="images/segundas/WhatsApp Image 2024-06-19 at 14.05.26.jpeg" alt="Foto 10 da Pasta 2">
+                <img src="images/segundas/WhatsApp Image 2024-06-19 at 14.29.08.jpeg" alt="Foto 11 da Pasta 2">
+                <img src="images/segundas/WhatsApp Image 2024-06-20 at 15.58.04.jpeg" alt="Foto 12 da Pasta 2">
+                <!-- Adicione mais fotos conforme necessário -->
+            </div>
+            <div class="modal-content" id="folder3">
+                <img src="images/Morconas/WhatsApp Image 2024-06-20 at 15.51.17.jpeg" alt="Foto 1 da Pasta 3">
+                <img src="images/Morconas/WhatsApp Image 2024-06-20 at 15.51.18 (1).jpeg" alt="Foto 2 da Pasta 3">
+                <img src="images/Morconas/WhatsApp Image 2024-06-20 at 15.51.18 (2).jpeg" alt="Foto 3 da Pasta 3">
+                <img src="images/Morconas/WhatsApp Image 2024-06-20 at 15.51.18 (3).jpeg" alt="Foto 4 da Pasta 3">
+                <img src="images/Morconas/WhatsApp Image 2024-06-20 at 15.51.18 (4).jpeg" alt="Foto 5 da Pasta 3">
+                <img src="images/Morconas/WhatsApp Image 2024-06-20 at 15.51.18 (5).jpeg" alt="Foto 6 da Pasta 3">
+                <img src="images/Morconas/WhatsApp Image 2024-06-20 at 15.51.18 (6).jpeg" alt="Foto 7 da Pasta 3">
+                <img src="images/Morconas/WhatsApp Image 2024-06-20 at 15.51.18.jpeg" alt="Foto 8 da Pasta 3">
+                <img src="images/Morconas/WhatsApp Image 2024-06-20 at 15.51.19 (1).jpeg" alt="Foto 9 da Pasta 3">
+                <img src="images/Morconas/WhatsApp Image 2024-06-20 at 15.51.19 (2).jpeg" alt="Foto 10 da Pasta 3">
+                <img src="images/Morconas/WhatsApp Image 2024-06-20 at 15.51.19 (3).jpeg" alt="Foto 11 da Pasta 3">
+                <img src="images/Morconas/WhatsApp Image 2024-06-20 at 15.51.19 (4).jpeg" alt="Foto 12 da Pasta 3">
+                <img src="images/Morconas/WhatsApp Image 2024-06-20 at 15.51.19 (5).jpeg" alt="Foto 13 da Pasta 3">
+                <img src="images/Morconas/WhatsApp Image 2024-06-20 at 15.51.19.jpeg" alt="Foto 14 da Pasta 3">
+                <!-- Adicione mais fotos conforme necessário -->
+            </div>
+        </div>
+        <div class="botao-voltar">
+            <a href="index.html" class="botao">Voltar à Página Inicial</a>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>Obrigado por visitar a galeria!</p>
+        </div>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
