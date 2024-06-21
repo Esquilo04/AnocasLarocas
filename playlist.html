@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Playlists</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- Incluir ícones do Font Awesome para os botões de play/pause -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head> 
 <body>
     <header>
@@ -25,9 +23,10 @@
                         Seu navegador não suporta o elemento de áudio.
                     </audio>
                     <button class="play-btn" data-audio="audio1" onclick="togglePlayPause('audio1')">
-                        <i class="fas fa-play"></i> <!-- Ícone de play -->
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                            <path d="M8 5v14l11-7z"/>
+                        </svg>
                     </button>
-                    <p class="play-instructions">(Clica na bola cinzenta)</p>
                 </div>
                 
                 <div class="playlist-item">
@@ -38,9 +37,10 @@
                         Seu navegador não suporta o elemento de áudio.
                     </audio>
                     <button class="play-btn" data-audio="audio2" onclick="togglePlayPause('audio2')">
-                        <i class="fas fa-play"></i> <!-- Ícone de play -->
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                            <path d="M8 5v14l11-7z"/>
+                        </svg>
                     </button>
-                    <p class="play-instructions">(Clica na bola cinzenta)</p>
                 </div>
 
                 <div class="playlist-item">
@@ -51,9 +51,10 @@
                         Seu navegador não suporta o elemento de áudio.
                     </audio>
                     <button class="play-btn" data-audio="audio3" onclick="togglePlayPause('audio3')">
-                        <i class="fas fa-play"></i> <!-- Ícone de play -->
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                            <path d="M8 5v14l11-7z"/>
+                        </svg>
                     </button>
-                    <p class="play-instructions">(Clica na bola cinzenta)</p>
                 </div>
             </div>
             <div class="botao-voltar">
@@ -66,28 +67,6 @@
             <p>Obrigado por tanto. Amo-te!</p>
         </div>
     </footer>
-    <script>
-        // Função para alternar play/pause do áudio
-        function togglePlayPause(audioId) {
-            var audio = document.getElementById(audioId);
-            var button = document.querySelector(`button[data-audio="${audioId}"]`);
-            
-            if (audio.paused) {
-                audio.play();
-                button.innerHTML = '<i class="fas fa-pause"></i>'; // Altera o ícone para pause
-            } else {
-                audio.pause();
-                button.innerHTML = '<i class="fas fa-play"></i>'; // Altera o ícone para play
-            }
-        }
-    
-        // Event listeners para atualizar os botões quando o áudio termina
-        document.querySelectorAll('audio').forEach(function(audio) {
-            audio.addEventListener('ended', function() {
-                var button = document.querySelector(`button[data-audio="${audio.id}"]`);
-                button.innerHTML = '<i class="fas fa-play"></i>'; // Volta o ícone para play
-            });
-        });
-    </script>
+    <script src="scripts.js"></script>
 </body>
 </html>
