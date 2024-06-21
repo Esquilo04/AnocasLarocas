@@ -10,10 +10,12 @@
 </head>
 <body>
     <!-- Caixa de texto inicial -->
-    <div class="caixa-texto" id="caixaTexto" onclick="fecharCaixaTexto()">
+    <div class="caixa-texto" id="caixaTexto">
         <div class="conteudo-caixa">
-            <span class="fechar-caixa"><i class="fas fa-times"></i></span>
+            <!-- Botão de fechar -->
+            <span class="fechar-caixa" onclick="fecharCaixaTexto()">&times;</span>
             <h2>Importante!</h2>
+            
             <p>
                 Se te estiveres a perguntar o porquê do número 77, deve-se ao facto de ires 77 dias para o Algarve. Possivelmente vais ver brasileirada
                 aí no meio, pois possivelmente, meti o gpt a fazer os motivos!
@@ -158,7 +160,15 @@
         var caixaTexto = document.getElementById('caixaTexto');
         caixaTexto.style.display = 'flex'; // Mudando para flex para centralizar verticalmente
     };
-</script>
+
+    // Fechar a caixa de texto se clicar fora dela
+    window.onclick = function(event) {
+        var caixaTexto = document.getElementById('caixaTexto');
+        if (event.target == caixaTexto) {
+            fecharCaixaTexto();
+        }
+    };
+    </script>
 
 </body>
 </html>

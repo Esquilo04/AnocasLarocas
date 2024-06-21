@@ -27,14 +27,13 @@
                             <path d="M8 5v14l11-7z"/>
                         </svg>
                     </button>
-                    <p class="play-instructions">(Clica na bola cinzenta)</p>
                 </div>
                 
                 <div class="playlist-item">
                     <img src="images/sushi.jpg" alt="Descrição da Imagem 2">
                     <p>Já que vais para o sushi e já, para te ires habituando ao ambiente.</p>
                     <audio id="audio2">
-                        <source src="musicas/SHO - I LIKE SUSHI (OFFICIAL MUSIC VIDEO) 寿司.鮨.すし.スシ.mp3" type="audio/mpeg">
+                        <source src="musicas/SHO - I LIKE SUSHI (OFFICIAL MUSIC VIDEO).mp3" type="audio/mpeg">
                         Seu navegador não suporta o elemento de áudio.
                     </audio>
                     <button class="play-btn" data-audio="audio2" onclick="togglePlayPause('audio2')">
@@ -42,7 +41,6 @@
                             <path d="M8 5v14l11-7z"/>
                         </svg>
                     </button>
-                    <p class="play-instructions">(Clica na bola cinzenta)</p>
                 </div>
 
                 <div class="playlist-item">
@@ -57,7 +55,6 @@
                             <path d="M8 5v14l11-7z"/>
                         </svg>
                     </button>
-                    <p class="play-instructions">(Clica na bola cinzenta)</p>
                 </div>
             </div>
             <div class="botao-voltar">
@@ -70,40 +67,6 @@
             <p>Obrigado por tanto. Amo-te!</p>
         </div>
     </footer>
-    <script>
-        // Função para alternar play/pause do áudio
-        function togglePlayPause(audioId) {
-            var audio = document.getElementById(audioId);
-            var button = document.querySelector(`button[data-audio="${audioId}"]`);
-            
-            if (audio.paused) {
-                audio.play();
-                button.innerHTML = `
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
-                        <path d="M14 21V3L5 12l9 9z"/>
-                    </svg>
-                `; // Altera o ícone para pause
-            } else {
-                audio.pause();
-                button.innerHTML = `
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
-                        <path d="M8 5v14l11-7z"/>
-                    </svg>
-                `; // Altera o ícone para play
-            }
-        }
-    
-        // Event listeners para atualizar os botões quando o áudio termina
-        document.querySelectorAll('audio').forEach(function(audio) {
-            audio.addEventListener('ended', function() {
-                var button = document.querySelector(`button[data-audio="${audio.id}"]`);
-                button.innerHTML = `
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
-                        <path d="M8 5v14l11-7z"/>
-                    </svg>
-                `; // Volta o ícone para play
-            });
-        });
-    </script>
+    <script src="scripts.js"></script>
 </body>
 </html>
